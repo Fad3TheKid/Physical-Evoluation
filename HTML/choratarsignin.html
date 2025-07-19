@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charotar Education Society</title>
+    <link rel="stylesheet" href="../CSS/login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <div class="container" id="container" style="display: flex; max-width: 700px; margin: auto; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); border-radius: 10px; overflow: hidden;">
+        <!-- Left side: Sign-in form -->
+        <div style="flex: 1; background: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px;">
+            <form id="signin-form" method="POST" action="../HTML/password_reset.html" style="width: 100%; max-width: 320px;">
+                <h1 style="text-align: center; margin-bottom: 20px;">Sign In</h1>
+                <label for="id">Enter your ID </label>
+                <input type="id" id="id" name="email" required style="width: 100%; padding: 12px; margin: 8px 0;" />
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required style="width: 100%; padding: 12px; margin: 8px 0;" />
+                <button type="submit" style="width: 100%; padding: 12px; margin-top: 20px; background-color: #FF4B2B; color: white; border: none; border-radius: 20px; font-weight: bold; cursor: pointer;">Sign In</button>
+            </form>
+        </div>
+        <!-- Right side: Logos and social buttons -->
+        <div style="flex: 1; background: linear-gradient(45deg, #FF4B2B, #FF416C); color: white; display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding: 40px;">
+            <div style="display: flex; justify-content: center; gap: 20px; margin-top: 10px;">
+                <a href="https://www.facebook.com/share/1967c4VRik/" target="_blank" rel="noopener noreferrer" style="color: white; font-size: 32px; text-decoration: none;"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/physical.evolution/" target="_blank" rel="noopener noreferrer" style="color: white; font-size: 32px; text-decoration: none;"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/physicalevolutionevolvinglives/" target="_blank" rel="noopener noreferrer" style="color: white; font-size: 32px; text-decoration: none;"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <img src="../img/PE.png" alt="Physical Evolution Logo" style="max-width: 150px; margin-top: 10px;" />
+            <img src="../img/ces.png" alt="Charotar Education Society Logo" style="max-width: 150px; margin-top: 10px;" />
+            <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 10px;">
+                <a href="https://www.facebook.com/cesociety/" target="_blank" rel="noopener noreferrer" style="color: white; font-size: 32px; text-decoration: none;"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/cesociety_1916/?hl=en" target="_blank" rel="noopener noreferrer" style="color: white; font-size: 32px; text-decoration: none;"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/charotar-education-society/" target="_blank" rel="noopener noreferrer" style="color: white; font-size: 32px; text-decoration: none;"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        
+        
+    </div>
+    <script src="../JS/login.js"></script>
+    <script src="../JS/choratarsignin.js"></script>
+</body>
+</html>

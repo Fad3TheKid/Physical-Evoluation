@@ -1,0 +1,112 @@
+body {
+  font-family: sans-serif;
+  padding-top: 70px; /* Adjusted to offset fixed navbar */
+}
+h1 {
+  color: coral;
+}
+.grid-container {
+  columns: 5 200px;
+  column-gap: 1.5rem;
+  width: 90%;
+  margin: 80px auto 0 auto; /* Added top margin to push content below navbar */
+}
+.grid-container > div {
+  width: 150px;
+  margin: 0 1.5rem 1.5rem 0;
+  display: inline-block;
+  width: 100%;
+  border: solid 2px black;
+  padding: 5px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  transition: all .25s ease-in-out;
+}
+.grid-container > div:hover img {
+  filter: grayscale(0);
+}
+.grid-container > div:hover {
+  border-color: coral;
+}
+.grid-container img {
+  width: 100%;
+  filter: grayscale(100%);
+  border-radius: 5px;
+  transition: all .25s ease-in-out;
+}
+
+/* Navbar adjustments for gallery */
+.navbar {
+  padding: 10px 20px; /* Reduced padding to make navbar shorter */
+  font-size: 22px;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg, #2e7d32, #4caf50);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  z-index: 1000;
+}
+
+/* Hamburger menu button */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  justify-content: space-between;
+}
+
+.navbar-toggle span {
+  height: 4px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* Navbar links container */
+.navbar-links {
+  display: flex;
+  gap: 15px;
+  flex-grow: 1;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive: show hamburger and hide links */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    background: linear-gradient(90deg, #2e7d32, #4caf50);
+    position: absolute;
+    top: 55px;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    border-radius: 0 0 8px 8px;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+  .navbar-toggle {
+    display: flex;
+  }
+}
